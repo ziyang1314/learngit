@@ -121,3 +121,9 @@ git switch -c <name>  我的git好像不太支持
 mac升级：https://www.jianshu.com/p/6eca0eadcc22
 
 解决冲突
+
+git merge <name>
+
+git status 查看冲突的有那些文件
+
+我使用的是vscode，可以看到文件上有c的是有冲突的文件；之后解决冲突，然后add commit 然后push
