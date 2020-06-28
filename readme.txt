@@ -33,5 +33,13 @@ git reset --head  commit—id  这样可以回退到指定的版本
 
 git reflog 可以查看log输出，这样就可以避免代码回退之后找不到之前最新的commit—id了
 
-工作区和暂存区；
+工作区->暂存区->当前的分支；
+
+git add    工作区-->暂存区
+
+git commit 暂存区-->当前分支
+
+git add 之后git commit 也完成之后，工作区和暂存区应该都是干净的；
+
+可以通过 git status 进行查看当前的提交状况
 
