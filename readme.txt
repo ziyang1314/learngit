@@ -72,5 +72,17 @@ git add 之后git commit 也完成之后，工作区和暂存区应该都是干�
 
 确定要进行删除的话，就用git rm filename 然后 commit 完成删除仓库中的文件操作
 
+关联远程库；
+
+github创建仓库
+
+之后push an existing repository from the command line
+
+git remote add origin https://github.com/ziyang1314/learngit.git
+
+然后将本地的内容推送上去；
+
+git push -u origin master
+
 
 
