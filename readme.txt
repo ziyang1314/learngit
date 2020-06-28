@@ -84,5 +84,24 @@ git remote add origin https://github.com/ziyang1314/learngit.git
 
 git push -u origin master
 
+以上是关联本地仓库创建新仓库；
 
+也可以远程克隆；
 
+git clone 仓库地址就可以了
+
+分支管理：
+
+创建分支和合并分支；
+
+创建分支： git checkout -b 分支名称 这里是创建并切换分支
+
+相当于
+
+git branch dev  然后 git checkout dev
+
+单独的git branch 可以查看分支列表 以及*标注的当前分支
+
+内容修改之后切换到master
+
+然后git merge 要合并的分支
