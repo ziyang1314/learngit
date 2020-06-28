@@ -116,5 +116,8 @@ git branch -d 分支名称分支名
 
 git switch -c <name>  我的git好像不太支持
 
+你可以升级git 因为switch 是从2.23之后才新加入的命令；
 
+mac升级：https://www.jianshu.com/p/6eca0eadcc22
 
+comflics
