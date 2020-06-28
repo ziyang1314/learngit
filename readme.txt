@@ -66,7 +66,7 @@ git add 之后git commit 也完成之后，工作区和暂存区应该都是干�
 
 1.直接删除
 
-2.命令行的方式
+2.命令行的方式 rm filename
 
 无论哪种方式，git status  都可以查看到文件的状态
 
@@ -105,3 +105,16 @@ git branch dev  然后 git checkout dev
 内容修改之后切换到master
 
 然后git merge 要合并的分支
+
+这种方式的合并是fast forward 模式；通常不会这样；
+
+删除分支
+
+git branch -d 分支名称分支名
+
+最新的创建和切换分支的方式：
+
+git switch -c <name>  我的git好像不太支持
+
+
+
