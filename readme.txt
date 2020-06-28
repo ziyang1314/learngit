@@ -17,4 +17,14 @@ git add  filename 添加指定的文件
 
 git commit -m '描述这次提交的内容' 形式将代码提交到本地的代码库；
 
+版本回退：
+
+git log 可以查看commit的提交记录
+
+git log --pretty=online 可以精简log输出内容
+
+SHA1计算 出来的长的数字字母串就是每次提交形成的版本号也叫 commit—id
+
+
+
 
