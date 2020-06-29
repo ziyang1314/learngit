@@ -165,3 +165,11 @@ git remote -v 可以查看远程库拉取和推送的地址  如果没有推送�
 git push origin 分支名称 
 
 多人协作的时候，拉取的代码
+
+编辑远程仓库的dev分支，测试本地是master分支，gitpull的时候连远端的仓库中的dev分支的修改不会拉取到
+
+在对远端进行推送的时候需要本地仓库的分支和远端做好关联
+
+具体方式是：git branch --set-upstream-to=origin/dev dev 这里本地当前的分支是在dev上，远程库和本地的分支名称应该一样才好；
+
+
