@@ -175,3 +175,29 @@ git push origin 分支名称
 git rebase 变基
 
 git log --graph --pretty=oneline --abbrev-commit  可以查看分支内容的提交情况；
+
+gitee :
+
+cat ~/.ssh/id_rsa.pub 查看自己的公钥；配置ssh
+
+创建gitee仓库；
+
+如果已经关联了github的远程库；
+
+可以通过 git remote rm origin 删除远程库
+
+然后重新在关联命名为github 
+
+无论github gitee 其关联的方式都是类似的
+
+git remote add rename git@gitee（github）.com:yourCangKuName/learngit.git
+
+关联成功之后，首次需要push新关联的仓库
+
+git push gitee 分支名称
+
+之后修改内容就可以正常的提交了，只是每次git push的时候需要添加 你要push的远程库；
+
+测试推送或者拉取数据的时候是否需要去指定哪个远程库gitee的还是github的
+
+
