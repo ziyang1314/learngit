@@ -127,3 +127,5 @@ git merge <name>
 git status 查看冲突的有那些文件
 
 我使用的是vscode，可以看到文件上有c的是有冲突的文件；之后解决冲突，然后add commit 然后push
+
+编辑远程仓库的dev分支，测试本地是master分支，gitpull的时候会不会连远端的仓库中的dev分支的修改也拉取到
