@@ -203,5 +203,9 @@ git push gitee 分支名称
 之后修改内容就可以正常的提交了,在库关联成功之后;
 每次提交需要指定提交的仓库；
 
+在项目开发过程中不希望nodemodules这些文件上传上去可以自己编写.gitignore
 
-
+#myconfig;
+文件夹名称
+* .js 
+db.class 
