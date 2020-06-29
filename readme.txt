@@ -6,7 +6,7 @@ cd  文件夹
 
 git init
 
-添加你要上擦昏倒本地仓库的代码文件；
+添加你要上添加到本地仓库的代码文件；
 
 git add .  添加全部
 
@@ -112,6 +112,10 @@ git branch dev  然后 git checkout dev
 
 git branch -d 分支名称分支名
 
+强行删除分支
+
+git branch -D 分支名称分支名
+
 最新的创建和切换分支的方式：
 
 git switch -c <name>  我的git好像不太支持
@@ -127,3 +131,37 @@ git merge <name>
 git status 查看冲突的有那些文件
 
 我使用的是vscode，可以看到文件上有c的是有冲突的文件；之后解决冲突，然后add commit 然后push
+
+注意：分支合并的时候，直接 git merge 的形式是fast forward模式，合并之后在分支上看不出来曾经发生过合并；
+
+git merge --no-ff -m "merge with no-ff" dev 加上--no-ff 可以在分支合并之后看到合并的记录（通过git log）；
+                   ^-----------=|
+若合并之后要创建一个新的commit 需要-m 
+
+修复bug的时候；
+
+单独拉出一个分支进行修复；
+
+git stash 可以暂存当前的工作区修改；
+
+然后切换到拉出来的要修复bug的分支，修复完成之后，再回到我们的开发分支；
+
+之后通过git stash list 查看我们保存的工作区暂存修改；
+
+1.通过git stash apply 恢复我们暂存内容，但是stash并不会被删除，可以通过git stash drop 来删除；
+
+2.通过git stash pop 也可以达到上述1的结果；
+
+对于多次stash 的想恢复到指定的stash
+
+可以 git stash apply stash@{0}   {这里是指定的stash的版本号，可以通过git stash list查看}；
+
+git remote  查看远程库的分支
+
+git remote -v 可以查看远程库拉取和推送的地址  如果没有推送（push）权限则只显示一条；
+
+推送分支到远程仓库：
+
+git push origin 分支名称 
+
+多人协作的时候，拉取的代码
