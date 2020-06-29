@@ -172,4 +172,6 @@ git push origin 分支名称
 
 具体方式是：git branch --set-upstream-to=origin/dev dev 这里本地当前的分支是在dev上，远程库和本地的分支名称应该一样才好；
 
+git rebase 变基
 
+git log --graph --pretty=oneline --abbrev-commit  可以查看分支内容的提交情况；
