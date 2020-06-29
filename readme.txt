@@ -196,8 +196,10 @@ git remote add rename git@gitee（github）.com:yourCangKuName/learngit.git
 
 git push gitee 分支名称
 
-之后修改内容就可以正常的提交了，只是每次git push的时候需要添加 你要push的远程库；
+之后进行本地分支和新的仓库的分支的关联；
 
-测试推送或者拉取数据的时候是否需要去指定哪个远程库gitee的还是github的
+和上面的类似： git branch --set-upstream-to=gitee/dev dev
+
+之后修改内容就可以正常的提交了,在库关联成功之后，每次提交两个关联账号内容都会跟着变化的；
 
 
