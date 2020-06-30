@@ -209,3 +209,9 @@ git push gitee 分支名称
 文件夹名称
 * .js 
 db.class 
+
+给git命令配置别名-- git global alias.rename branch
+
+我还是老实的先用这个吧，熟悉了之后，可以在主目录 .gitconfig中进行内容的配置；
+
+gui工具 sourcetree
