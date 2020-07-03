@@ -215,3 +215,18 @@ db.class
 我还是老实的先用这个吧，熟悉了之后，可以在主目录 .gitconfig中进行内容的配置；
 
 gui工具 sourcetree
+
+通过自己的域名来访问自己的github项目
+
+github创建仓库，仓库名称是 github账号名称.github.io
+
+仓库中添加文件CNAME 文件中添加自己购买的域名，这样做的目的是为了关联自己github账号
+
+自己的域名；
+
+准备好上面的内容之后，就可以进行域名解析了，解析的目的是将我们的域名和github项目的地址进行关联，
+使每次访问我们域名的时候能够解析到我们项目的资质去；
+
+具体的过程：
+
+https://zhuanlan.zhihu.com/p/102592286?utm_source=wechat_session&utm_medium=social&utm_oi=1199726953626193920
